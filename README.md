@@ -1,3 +1,29 @@
+## A clean Next.js template set up with Typescript support, testing via Jest, ESLint, Prettier and Wallaby.js
+
+This is a template for a fresh project with what I hope at this point in time are 'good' practices. Might change tomorrow.
+
+A single test has been set up as an example, delete the **snapshots** folder if you want to avoid failed tests the first time you make a change.
+
+Scripts set up are:
+
+```
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "lint": "eslint --ext js,jsx,ts,tsx",
+    "format": "eslint --ext js,jsx,ts,tsx --fix",
+    "lint:type": "yarn lint && yarn type-check"
+  ```
+All the config is found in the package.json. 
+
+---
+
+##### The following is the original readme
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
